@@ -1,0 +1,31 @@
+
+<mat-card class="example-card">
+    <!-- <mat-card-header> -->
+      <h1>{{name}}</h1>
+      <h5 class="mb-4 mt-0">{{country}}</h5>
+      <mat-divider></mat-divider>
+      <h1 class="p-2" style="font-size: 45px;">{{temperature}} °C</h1>
+      <h2>{{description}}</h2>
+    <!-- </mat-card-header> -->
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <p>Minimum Temp: {{tempMin}} °C</p>
+          <p>Pressure: {{pressure}}</p>
+          <p>Sunrise: {{sunrise}}</p>
+        </div>
+        <div class="col">
+          <p>Maximum Temp: {{tempMax}} °C</p>
+          <p>Humidity: {{humidity}}</p>
+          <p>Sunset: {{sunset}}</p>
+        </div>
+      </div>
+      
+      
+      <!-- <p>{{ longText }}</p> -->
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    <!-- <mat-card-footer>
+       <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
+    <!-- </mat-card-footer> -->
+  </mat-card>
