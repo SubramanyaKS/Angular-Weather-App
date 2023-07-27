@@ -4,9 +4,13 @@
     margin-right: 4px;
   }
 
-  footer {
+footer {
     margin-top: 8px;
     display: flex;
     align-items: center;
     line-height: 20px;
+  }
+  .footer-text{
+    align-items: center;
+    text-align: center;
   }
