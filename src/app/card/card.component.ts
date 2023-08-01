@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { ApiService } from '../api.service';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
+  @Input() weatherData: any;
   details:any;
   temperature:number=0;
   tempMin:number=0;
@@ -18,15 +19,17 @@ export class CardComponent implements OnInit {
   country:string="";
   sunrise: string= "";
   sunset: string= "";
-
-
-  constructor(private weather:ApiService) { }
+  windSpeed:number=0.0;
+  windDegree:number=0.0;
+  // compassSector = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW", "N"];
+  public receiveData:string="";
+  constructor(private weather:ApiService) {
+    this.receiveData=this.weather.data;
+    this.details=this.weatherData;
+   }
 
   ngOnInit(): void {
-    this.weather.fetchData("london").subscribe({
-      next: (res)=>{
-        console.log(res)
-        this.details=res;
+        this.details=this.weatherData;
         // console.log("Temp",this.details.main.temp);
         this.name=this.details.name;
         this.temperature=this.details.main.temp;
@@ -36,16 +39,10 @@ export class CardComponent implements OnInit {
         this.pressure = this.details.main.pressure;
         this.description = this.details.weather[0].description;
         this.country=this.details.sys.country;
-        this.sunrise= new Date((this.details.sys.sunrise + this.details.timezone) * 1000).toISOString().slice(0,25)
-        this.sunset= new Date((this.details.sys.sunset + this.details.timezone) * 1000).toISOString().slice(0,25)
-      },
-      error:(err)=>{
-        console.error(err);
-      },
-      complete:()=>{
-        console.log("All Test Completed")
-      }
-    })
+        this.sunrise= new Date((this.weatherData.sys.sunrise + this.weatherData.timezone) * 1000).toISOString().slice(11,19)
+        this.sunset= new Date((this.details.sys.sunset + this.details.timezone) * 1000).toISOString().slice(11,19)
+        this.windSpeed=this.details.wind.speed;
+        this.windDegree=this.details.wind.deg;
   }
 
 }
