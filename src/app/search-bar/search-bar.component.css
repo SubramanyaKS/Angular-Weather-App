@@ -1,0 +1,11 @@
+.input-textbox{
+  border-radius: 15px;
+  width: 50%;
+  height: 40px;
+  padding-left: 2%;
+  font-size: medium;
+  font-weight: bolder;
+  border-color: blue;
+  color:blue;
+  box-shadow: 5px 5px  #0003;
+}
