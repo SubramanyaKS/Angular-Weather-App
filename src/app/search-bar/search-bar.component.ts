@@ -9,7 +9,7 @@ import { ApiService } from '../api.service';
 export class SearchBarComponent implements OnInit {
   location:string="";
   @Output() weatherDataEvent = new EventEmitter<any>();
-  @Output() weatherIconUrl = new EventEmitter<any>();
+  // @Output() weatherIconUrl = new EventEmitter<any>();
 
   constructor(private apiService:ApiService) { }
 
