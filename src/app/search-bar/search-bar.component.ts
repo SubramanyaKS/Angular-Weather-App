@@ -9,6 +9,7 @@ import { ApiService } from '../api.service';
 export class SearchBarComponent implements OnInit {
   location:string="";
   @Output() weatherDataEvent = new EventEmitter<any>();
+  @Output() weatherIconUrl = new EventEmitter<any>();
 
   constructor(private apiService:ApiService) { }
 
@@ -18,7 +19,7 @@ export class SearchBarComponent implements OnInit {
     if(this.location){
       this.apiService.fetchData(this.location).subscribe({
         next :(res)=>{
-          console.log(res);
+          // console.log(res);
           this.weatherDataEvent.emit(res);
         },
         error:(err)=>{
