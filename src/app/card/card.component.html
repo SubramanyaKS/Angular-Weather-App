@@ -1,9 +1,8 @@
 <div *ngIf="weatherData">
-<mat-card class="example-card shadow-lg p-3 m-5  rounded">
-  <img [src]="weather.getWeatherIconUrl(weatherData.weather[0].icon)" alt="src" />
+<mat-card class="example-card shadow-lg p-2 m-2 mt-3  rounded">
+  <img [src]="weather.getWeatherIconUrl(weatherData.weather[0].icon)" width=150 alt="src" />
     <!-- <mat-card-header> -->
-      <h1>{{weatherData.name}}</h1>
-      <h5 class="mb-4 mt-0">{{weatherData.sys.country}}</h5>
+      <h1>{{weatherData.name}} <h5 class="mb-4 mt-0">{{weatherData.sys.country}}</h5></h1>
       <mat-divider></mat-divider>
       <h1 class="p-2" style="font-size: 45px;">{{weatherData.main.temp}} °C</h1>
       <h2>{{weatherData.weather[0].description}}</h2>
