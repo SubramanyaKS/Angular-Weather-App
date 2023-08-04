@@ -1,9 +1,11 @@
 .example-card {
-    min-width: 400px;
-    margin-bottom: 8px;
+    min-width: 350px;
+    margin-bottom: 2px;
+    border-radius: 10% !important;
     text-align: center;
+    justify-content: center;
     background-color: blue;
     font-size: medium;
     color: white;
-    box-shadow: 0px 5px  5px -1px #0003 !important;
+    box-shadow: 0px 10px  10px 10px #0003 !important;
   }
