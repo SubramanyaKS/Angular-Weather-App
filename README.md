@@ -2,6 +2,11 @@
 
 A Simple Weather App using Angular and openweathermap API
 
+## Technology Used
+* Angular
+* Node Js
+* Angular Material
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
 ### Development server
