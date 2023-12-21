@@ -2,6 +2,10 @@
 
 A Simple Weather App using Angular and openweathermap API
 
+#### API
+
+The Application Programming Interface is a set of rules and regulations and standards that allows software programs to interact with each other. It acts as a middleman between two applications, allowing them to exchange data and information
+
 ## Technology Used
 * Angular
 * Node Js
