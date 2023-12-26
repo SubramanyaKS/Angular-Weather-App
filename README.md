@@ -2,6 +2,10 @@
 
 A Simple Weather App using Angular and openweathermap API
 
+#### API
+
+The Application Programming Interface is a set of rules and regulations and standards that allows software programs to interact with each other. It acts as a middleman between two applications, allowing them to exchange data and information
+
 ## Technology Used
 * Angular
 * Node Js
@@ -32,3 +36,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Feedback
+
+If you have any feedback, please reach out to me at [email](connectwithsubbu@gmail.com)
+
+If you like this don't forget to ⭐ the repository.
+
