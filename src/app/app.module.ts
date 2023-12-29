@@ -10,6 +10,8 @@ import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
 import { CardComponent } from './card/card.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { ThemeService } from './theme.service';
+import { SmallCardComponent } from './small-card/small-card.component';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     HeaderComponent,
     FooterComponent,
     CardComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    SmallCardComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
