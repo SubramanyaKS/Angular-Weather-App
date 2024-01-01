@@ -1,6 +1,6 @@
-<div class="text-center">
-  <input class="input-textbox" type="text" [(ngModel)]="location" />
-  <button mat-fab (click)="search()" style="background-color: blue; color: white;" aria-label="Search icon">
+<div class="search-container shadow-lg">
+  <input class="input-textbox" type="text" [(ngModel)]="location" placeholder="Search...">
+  <button mat-icon-button (click)="search()" aria-label="Search icon">
     <mat-icon>search</mat-icon>
   </button>
 </div>
