@@ -11,32 +11,61 @@ The Application Programming Interface is a set of rules and regulations and stan
 * Node Js
 * Angular Material
 
+## Features
+
+- The application features a robust search functionality for user-friendly access.
+- Ensuring a seamless experience, the UI is responsive and adapts to various devices and screen sizes.
+- Users can expect precise and reliable results when utilizing the search feature.
+- Current weather conditions, encompassing temperature, humidity, wind speed, and a detailed weather description, are prominently displayed.
+- The application efficiently retrieves weather data by accepting a manually entered city name.
+
+## Pre Requisite
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
-### Development server
+* Install ![git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+* Installation of [![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/) is mandatory with ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+* Login in to [Openweathermap](https://openweathermap.org/api) api website to get your `API key`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Getting Started
 
-### Code scaffolding
+To run this project locally, follow these steps:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clone the repository:
 
-## Build
+   ```bash
+    git clone https://github.com/SubramanyaKS/Angular-Weather-App.git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   ```
+2. Navigate to the project directory:
 
-### Running unit tests
+    ```bash
+    cd Angular-Weather-App
+    ```
+3. Install dependencies:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm install
 
-### Running end-to-end tests
+```
+4. Obtain an API key from OpenWeatherMap and replace `YOUR_API_KEY` in the code with your actual API key.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+5. Start the development server:
+```bash
+ng serve
+```
 
-### Further help
+6. Open your browser and navigate to http://localhost:4200/ to view the app.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Screenshot
 
+
+
+## Credits
+
+[Openweathermap API](https://openweathermap.org/api)
+[Fontawesome Icons](https://fontawesome.com/v6/icons)
+[Angular CLI ](https://angular.io/cli)
 
 ## Feedback
 
