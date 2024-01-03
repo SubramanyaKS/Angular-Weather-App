@@ -57,6 +57,10 @@ ng serve
 
 6. Open your browser and navigate to http://localhost:4200/ to view the app.
 
+## Contribution
+
+We welcome contributions! If you'd like to contribute to React-News-App, please follow our [Contribution Guidelines](https://github.com/SubramanyaKS/Angular-Weather-App/blob/main/CONTRIBUTING.md).
+
 ## Screenshot
 
 ![Light Mode](./screenshot/angular-weather-light.PNG)
