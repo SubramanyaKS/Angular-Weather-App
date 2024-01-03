@@ -59,6 +59,8 @@ ng serve
 
 ## Screenshot
 
+![Light Mode](./screenshot/angular-weather-light.PNG)
+![Dark Mode](./screenshot/angular-weather-dark.PNG)
 
 
 ## Credits
