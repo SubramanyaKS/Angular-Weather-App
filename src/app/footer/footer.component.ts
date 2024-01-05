@@ -12,4 +12,10 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openGitHub() {
+    // Add your GitHub-related functionality here
+    window.open('https://github.com/SubramanyaKS/Angular-Weather-App', '_blank');
+  }
+
+
 }
