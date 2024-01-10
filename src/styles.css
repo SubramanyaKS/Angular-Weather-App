@@ -1,28 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap'); */
+
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-  /* Light Theme */
-  .light-theme {
-    --background-color: #ffffff;
+
+body { margin: 0;
+   font-family: "Roboto-Mono", monospace !important;
+  }
+/* Light Theme */
+/* .light-theme {
+    --bg-color: linear-gradient(to bottom, #ffffff, #f0f0f0);
     --text-color: #000000;
     --icon-color:#000;
     --card-background: #f5f5f5; /* Light gray background for cards */
-    --card-color: #333333; /* Text color for cards in light theme */
-    --header-background: #ffffff; /* Blue header background in light theme */
-    --header-color: #000000; /* Text color for header in light theme */
-  }
+    /* --card-color: #333333; Text color for cards in light theme */
+    /* --header-background: #ffffff; Blue header background in light theme */
+    /* --header-color: #000000; Text color for header in light theme */
+/* }  */
+.light-theme{
+  --search-background:#E0FFFF;       /* Light Sky Blue */
+  --bg-color: #E0FFFF;       /* Light Sky Blue */
+  --text-color: #333333;     /* Dark Gray */
+  --icon-color: #FFD700;     /* Sunflower Yellow */
+  --card-background: #F5F5F5; /* Light Gray */
+  --card-color: #333333;     /* Dark Gray for card text */
+  --header-background: #87CEEB; /* Light Sky Blue for header */
+  --header-color: #333333;   /* Dark Gray for header text */
+}
   
   /* Dark Theme */
-  .dark-theme {
-    --background-color: #333333;
+  .dark-theme{
+  --search-background:#2727b0; /*Persian Blue*/
+  --bg-color: #191970;       /* Midnight Blue */
+  --text-color: #CCCCCC;     /* Light Gray */
+  --icon-color: #FFFF00;     /* Electric Yellow */
+  --card-background: #333333; /* Dark Charcoal */
+  --card-color: #CCCCCC;     /* Light Gray for card text */
+  --header-background: #2F4F4F; /* Dark Slate Gray for header */
+  --header-color: #CCCCCC;   /* Light Gray for header text */
+  }
+  /* .dark-them {
+    --bg-color: linear-gradient(to bottom, #333333, #1a1a1a);
     --text-color: #ffffff;
     --icon-color:#fff;
     --card-background: #444444; /* Dark gray background for cards */
-    --card-color: #ffffff; /* Text color for cards in dark theme */
-    --header-background: #1f2a38; /* Dark blue header background in dark theme */
-    --header-color: #ffffff; /* Text color for header in dark theme */
-  }
+    /* --card-color: #ffffff; Text color for cards in dark theme */
+    /* --header-background: #1f2a38; Dark blue header background in dark theme */
+    /* --header-color: #ffffff; Text color for header in dark theme */
+  /* }  */
 body {
-  background-color: var(--background-color);
+  background: var(--bg-color);
   color: var(--text-color);
+}
+.mat-card, .mat-card-content{
+  font-family: 'Roboto-Mono', monospace !important;
 }
