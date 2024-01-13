@@ -69,9 +69,9 @@ We welcome contributions! If you'd like to contribute to React-News-App, please 
 
 ## Credits
 
-[Openweathermap API](https://openweathermap.org/api)
-[Fontawesome Icons](https://fontawesome.com/v6/icons)
-[Angular CLI ](https://angular.io/cli)
+- [Openweathermap API](https://openweathermap.org/api)
+- [Fontawesome Icons](https://fontawesome.com/v6/icons)
+- [Angular CLI ](https://angular.io/cli)
 
 ## Feedback
 
