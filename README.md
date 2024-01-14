@@ -1,10 +1,10 @@
 # WeatherApp
 
-A Simple Weather App using Angular and openweathermap API
+A Simple Weather App using Angular and openweathermap API.
 
 #### API
 
-The Application Programming Interface is a set of rules and regulations and standards that allows software programs to interact with each other. It acts as a middleman between two applications, allowing them to exchange data and information
+The Application Programming Interface is a set of rules and regulations and standards that allows software programs to interact with each other. It acts as a middleman between two applications, allowing them to exchange data and information.
 
 ## Technology Used
 * Angular
@@ -40,7 +40,7 @@ To run this project locally, follow these steps:
 2. Navigate to the project directory:
 
     ```bash
-    cd Angular-Weather-App
+      cd Angular-Weather-App
     ```
 3. Install dependencies:
 
@@ -55,7 +55,7 @@ npm install
 ng serve
 ```
 
-6. Open your browser and navigate to http://localhost:4200/ to view the app.
+6. Open your browser and navigate to `http://localhost:4200/` to view the app.
 
 ## Contribution
 
