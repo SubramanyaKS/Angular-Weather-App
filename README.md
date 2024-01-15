@@ -1,6 +1,6 @@
 # WeatherApp
 
-A Simple Weather App using Angular and openweathermap API.
+A simple weather app built with Angular js and utilizes the OpenWeatherMap API to fetch and display weather information for a given location.
 
 #### API
 
