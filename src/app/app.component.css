@@ -3,18 +3,22 @@
   --blue-2: #4C52AD;
   --yellow-1: #FAC742;
   --white: #FFF;
+  --black:#000;
   --grey-1: #EDEDED;
+  --grey-2:#CCCCCC;
   --shadow-dark: rgba(0,0,0,0.3);
   --shadow-light: rgba(255,255,255,0.1);
 }
 :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Roboto-Mono", monospace !important;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
     font-size: 14px;
     color: #333;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
 
   h1,
   h2,
@@ -70,6 +74,7 @@
     margin: 82px auto 32px;
     padding: 0 16px;
     max-width: 960px;
+    min-height: 430px;
     /* flex-direction: column; */
     /* align-items: center; */
   }
@@ -83,7 +88,7 @@
     margin-right: 8px;
   }
 
-  .card svg.material-icons path {
+  /* .card svg.material-icons path {
     fill: #888;
   }
 
@@ -145,7 +150,7 @@
 
   .card.card.highlight-card span {
     margin-left: 60px;
-  }
+  } */
 
   svg#rocket {
     width: 80px;
