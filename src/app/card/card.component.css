@@ -1,11 +1,15 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap'); */
+
 .example-card {
     min-width: 350px;
     margin-bottom: 2px;
-    border-radius: 10% !important;
     text-align: center;
     justify-content: center;
-    background-color: var(--light-card);
+    background-color: var(--card-background);
     font-size: medium;
-    color: var(--light-background);
+    color: var(--card-color);
     box-shadow: 0px 10px  10px 10px #0003 !important;
 }
+/* .mat-card{
+    font-family: 'Inconsolata', monospace !important;
+} */
