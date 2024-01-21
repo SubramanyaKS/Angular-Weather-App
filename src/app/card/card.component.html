@@ -1,32 +1,35 @@
 <div *ngIf="weatherData">
 <mat-card class="example-card shadow-lg p-2 m-2 mt-3  rounded">
-  <img [src]="weather.getWeatherIconUrl(weatherData.weather[0].icon)" width=150 alt="src" />
+  <mat-card-content>
+  <div class="row ">
+  <div class="col">
+    <img [src]="weather.getWeatherIconUrl(weatherData.weather[0].icon)" width=150 alt="src" />
     <!-- <mat-card-header> -->
-      <h1>{{weatherData.name}} <h5 class="mb-4 mt-0">{{weatherData.sys.country}}</h5></h1>
+      <h3>{{weatherData.weather[0].description}}</h3>
+      <h3 style="font-size: 20px;"><b>{{weatherData.name}}</b> <h5 class="mb-3 mt-0">{{weatherData.sys.country}}</h5></h3>
       <mat-divider></mat-divider>
-      <h1 class="p-2" style="font-size: 45px;">{{weatherData.main.temp}} °C</h1>
-      <h2>{{weatherData.weather[0].description}}</h2>
-    <!-- </mat-card-header> -->
-    <mat-card-content>
-      <div class="row">
-        <div class="col">
-          <p>Minimum Temp: {{weatherData.main.temp_min}} °C</p>
-          <p>Pressure: {{weatherData.main.pressure}} hPa</p>
-          <p>Wind Speed: {{weatherData.wind.speed}} m/s</p>
-        </div>
-        <div class="col">
-          <p>Maximum Temp: {{weatherData.main.temp_max}} °C</p>
-          <p>Humidity: {{weatherData.main.humidity}} %</p>
-          <p>Wind Degree: {{weatherData.wind.deg}}</p>
-        </div>
+      <h2 class="p-2" style="font-size: 45px;">{{weatherData.main.temp}} °C</h2>
+      <!-- <h4 style="font-size: 20px;">{{weatherData.main.temp_min}}°C/{{weatherData.main.temp_max}}°C</h4> -->
+      <h6 style="font-size: 18px;"> {{ currentTime }}</h6>
+      <h6 style="font-size: 18px;">Current Date: {{updateCurrentDate(weatherData.dt)}}</h6>
+    </div>
+  <div class="col-8">
+    <div class="row">
+      <div class="col">
+        <app-small-card title="Sun Rise" [value]="convertUnixTimestampToTime(weatherData.sys.sunrise)" className="fa-solid fa-2x fa-sun"></app-small-card>
+        <app-small-card title="Pressure" [value]="weatherData.main.pressure + ' hPa'" className="fa-solid fa-2x fa-gauge-high"></app-small-card>
+        <app-small-card title="Wind Speed" [value]="weatherData.wind.speed + ' m/s'" className="fa-solid fa-2x fa-wind"></app-small-card>
       </div>
-      
-      
-      <!-- <p>{{ longText }}</p> -->
+      <div class="col">
+        <app-small-card title="Sun Set" [value]="convertUnixTimestampToTime(weatherData.sys.sunset)" className="fa-solid fa-2x fa-sun"></app-small-card>
+        <app-small-card title="Humidity" [value]="weatherData.main.humidity + ' %'" className="fa-solid fa-2x fa-droplet"></app-small-card>
+        <app-small-card title="Visibility" [value]="convertVisibilityKm(weatherData.visibility)+' km'" className="fa-solid fa-2x fa-eye"></app-small-card>
+      </div>
+    </div>
+  </div>
+  </div>
+  
       <mat-divider></mat-divider>
     </mat-card-content>
-    <!-- <mat-card-footer>
-       <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
-    <!-- </mat-card-footer> -->
   </mat-card>
 </div>
