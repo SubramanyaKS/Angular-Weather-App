@@ -1,10 +1,13 @@
 <header>
-  <mat-toolbar class="header">
+  <mat-toolbar class="header shadow-lg">
     <mat-icon>cloudy_snowing</mat-icon>
     <span class="title">WEATHER APP</span>
     <span class="spacer"></span>
     <!-- <button mat-fab ></button> -->
-    <mat-slide-toggle></mat-slide-toggle>
+    <button class="github-button" (click)="openGitHub()">
+      <i class="fab fa-github"></i>
+    </button>    
+    <mat-slide-toggle class="custom-slide-toggle" (click)="toggleTheme()"></mat-slide-toggle>
     <!-- <button mat-fab ></button> -->
   </mat-toolbar>
 </header>
