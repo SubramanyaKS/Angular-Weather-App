@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private themeService: ThemeService) {}
+
+  getCurrentTheme(): string {
+    return this.themeService.getCurrentTheme();
+  }
+
+  toggleTheme(): void {
+    this.themeService.toggleTheme();
+  }
 
   ngOnInit(): void {
+  }
+  openGitHub() {
+    // Add your GitHub-related functionality here
+    window.open('https://github.com/SubramanyaKS/Angular-Weather-App', '_blank');
   }
 
 }
