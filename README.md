@@ -18,6 +18,7 @@ The Application Programming Interface is a set of rules and regulations and stan
 - Users can expect precise and reliable results when utilizing the search feature.
 - Current weather conditions, encompassing temperature, humidity, wind speed, and a detailed weather description, are prominently displayed.
 - The application efficiently retrieves weather data by accepting a manually entered city name.
+- The application has both dark theme and light theme
 
 ## Pre Requisite
 
