@@ -20,10 +20,10 @@
     "@angular/platform-browser": "^15.2.10",
     "@angular/platform-browser-dynamic": "^15.2.10",
     "@angular/router": "^15.2.10",
-    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "bootstrap": "^5.3.1",
     "rxjs": "~7.5.0",
-    "tslib": "^2.3.0",
+    "tslib": "^2.6.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "@angular/compiler-cli": "^15.2.10",
     "@types/jasmine": "~4.0.0",
     "jasmine-core": "~4.3.0",
-    "karma": "~6.4.0",
+    "karma": "~6.4.2",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
