@@ -3,11 +3,12 @@
     <mat-icon>cloudy_snowing</mat-icon>
     <span class="title">WEATHER APP</span>
     <span class="spacer"></span>
-    <!-- <button mat-fab ></button> -->
-    <button class="github-button" (click)="openGitHub()">
+    <button mat-fab class="m-2 custom-button" (click)="openGitHub()"><i class="fab fa-github"></i></button>
+    <!-- <button class="github-button" (click)="openGitHub()">
       <i class="fab fa-github"></i>
-    </button>    
-    <mat-slide-toggle class="custom-slide-toggle" (click)="toggleTheme()"></mat-slide-toggle>
+    </button>     -->
+    <div class="toggle-wrapper">
+    <mat-slide-toggle class="custom-slide-toggle" (click)="toggleTheme()"></mat-slide-toggle></div>
     <!-- <button mat-fab ></button> -->
   </mat-toolbar>
 </header>
