@@ -1,13 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@fortawesome/fontawesome-free/css/all.css';
+@import '@fortawesome/fontawesome-free/css/all.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap'); */
 
 
 html, body { height: 100%; }
 
 body { margin: 0;
    font-family: "Roboto-Mono", monospace !important;
+   background: var(--bg-color);
+  color: var(--text-color);
   }
 /* Light Theme */
 
@@ -35,10 +36,6 @@ body { margin: 0;
   --header-color: #CCCCCC;   /* Light Gray for header text */
   --button-color:#2b5757;
   }
-body {
-  background: var(--bg-color);
-  color: var(--text-color);
-}
 .mat-card, .mat-card-content{
   font-family: 'Roboto-Mono', monospace !important;
 }
