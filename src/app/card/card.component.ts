@@ -2,9 +2,10 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+    selector: 'app-card',
+    templateUrl: './card.component.html',
+    styleUrls: ['./card.component.css'],
+    standalone: false
 })
 export class CardComponent implements OnInit {
   @Input() weatherData: any;
