@@ -1,11 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import { NgIf } from '@angular/common';
+import { MatCard, MatCardContent } from '@angular/material/card';
+import { MatDivider } from '@angular/material/divider';
+import { SmallCardComponent } from '../small-card/small-card.component';
 
 @Component({
     selector: 'app-card',
     templateUrl: './card.component.html',
     styleUrls: ['./card.component.css'],
-    standalone: false
+    imports: [NgIf, MatCard, MatCardContent, MatDivider, SmallCardComponent]
 })
 export class CardComponent implements OnInit {
   @Input() weatherData: any;
