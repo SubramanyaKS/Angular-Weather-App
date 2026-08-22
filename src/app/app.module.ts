@@ -14,17 +14,13 @@ import { ThemeService } from './theme.service';
 import { SmallCardComponent } from './small-card/small-card.component';
 
 
-@NgModule({ declarations: [
-        AppComponent,
-        HeaderComponent,
-        FooterComponent,
-        CardComponent,
-        SearchBarComponent,
-        SmallCardComponent
-    ],
-    bootstrap: [AppComponent], imports: [BrowserModule,
+@NgModule({ declarations: [AppComponent], bootstrap: [AppComponent], imports: [BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
         MaterialModule,
-        FormsModule], providers: [ThemeService, provideHttpClient(withInterceptorsFromDi())] })
+        FormsModule, HeaderComponent,
+        FooterComponent,
+        CardComponent,
+        SearchBarComponent,
+        SmallCardComponent], providers: [ThemeService, provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
