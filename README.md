@@ -22,7 +22,7 @@ The Application Programming Interface is a set of rules and regulations and stan
 
 ## Pre Requisite
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 21.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 22.
 
 * Install ![git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 * Installation of [![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/) is mandatory with ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)

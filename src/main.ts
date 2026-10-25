@@ -4,7 +4,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { environment } from './environments/environment';
 import { ThemeService } from './app/theme.service';
-import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi, withXhr } from '@angular/common/http';
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
 import { AppRoutingModule } from './app/app-routing.module';
 import { provideAnimations } from '@angular/platform-browser/animations';
@@ -18,7 +18,7 @@ if (environment.production) {
 bootstrapApplication(AppComponent, {
     providers: [
         importProvidersFrom(BrowserModule, AppRoutingModule, FormsModule),
-        ThemeService, provideHttpClient(withInterceptorsFromDi()),
+        ThemeService, provideHttpClient(withXhr(), withInterceptorsFromDi()),
         provideAnimations()
     ]
 })

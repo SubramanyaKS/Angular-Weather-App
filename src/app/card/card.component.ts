@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ApiService } from '../api.service';
 import { NgIf } from '@angular/common';
 import { MatCard, MatCardContent } from '@angular/material/card';
@@ -9,6 +9,7 @@ import { SmallCardComponent } from '../small-card/small-card.component';
     selector: 'app-card',
     templateUrl: './card.component.html',
     styleUrls: ['./card.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [NgIf, MatCard, MatCardContent, MatDivider, SmallCardComponent]
 })
 export class CardComponent implements OnInit {

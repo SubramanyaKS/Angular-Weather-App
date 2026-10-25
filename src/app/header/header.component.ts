@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ThemeService } from '../theme.service';
 import { MatToolbar } from '@angular/material/toolbar';
 import { MatIcon } from '@angular/material/icon';
@@ -9,6 +9,7 @@ import { MatSlideToggle } from '@angular/material/slide-toggle';
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [MatToolbar, MatIcon, MatFabButton, MatSlideToggle]
 })
 export class HeaderComponent implements OnInit {
